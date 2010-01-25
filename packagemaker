@@ -1,0 +1,5 @@
+#!/bin/sh
+
+packagemaker=/Developer/Applications/Utilities/PackageMaker.app/Contents/MacOS/PackageMaker
+
+$packagemaker $*

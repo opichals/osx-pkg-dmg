@@ -1,0 +1,21 @@
+This is a set of scripts which automate the whole OS X .pkg and .dmg construction
+for any folder you point it to. See the makefile for usage example.
+
+The resulting package should during installation get under controll of pkgutil.
+One can check it is installed using:
+$ pkgutil --packages
+
+Pkgutil can also remove it via (careful with this one, use only if you know what
+exactly it is doing):
+$ pkgutil --unlink
+
+And one can make the system forget about it using:
+$ pkgutil --forget
+
+
+Available under the BSD License.
+
+Enjoy!
+
+Standa Opichal
+opichals@gmail.com
