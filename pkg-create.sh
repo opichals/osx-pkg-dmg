@@ -1,7 +1,7 @@
 #!/bin/bash
 # Create a complete OS .dmg file (it needs the Apple Developers Tools installed)
 # usage:
-#    pkg-create.sh <contents-root-folder> <package-name> <package-version>
+#    pkg-create.sh <contents-root-folder> <package-name> <package-version> <vendor-string>
 #
 
 CONTENTS=$1
@@ -9,8 +9,10 @@ shift
 NAME=$1
 shift
 VERSION=$1
+shift
+VENDOR=$1
 
-PKGID="com.test.$NAME-$VERSION"
+PKGID="$VENDOR.$NAME-$VERSION"
 
 # unused pkg-info entries so far
 #
