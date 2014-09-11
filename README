@@ -12,6 +12,7 @@ $ pkgutil --unlink
 And one can make the system forget about it using:
 $ pkgutil --forget
 
+A seemingly more up-to-date info is present at https://wincent.com/wiki/Uninstalling_packages_(.pkg_files)_on_Mac_OS_X
 
 Available under the BSD License.
 
